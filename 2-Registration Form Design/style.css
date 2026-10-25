@@ -1,0 +1,27 @@
+#reg-form{
+    width: 750px;
+    /*height: 500px;*/
+    background-image: url('https://img.magnific.com/premium-psd/photographic-light-purple-lavender-sprigs-background_1313198-48628.jpg?semt=ais_hybrid&w=740&q=80');
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+}
+.form-group{
+
+}
+
+.form-group label{
+    color: #000000;
+    font-size: 20px;
+
+}
+
+button{
+    padding: 10px;
+    background-color: purple;
+    color: white; /* Added text color for better visibility matching your button background */
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Registration Form Design</title>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+			<style>
+
+                /*---style.css---*/
+				
+			</style>
+	</head>
+	<body>
+
+		<form id="reg-form">
+
+			<div class="form-group">
+
+				<!-- Bold Form Title -->
+				<div style="text-align: center; margin-bottom: 25px;">
+					<h2 style="color: #000000; font-size: 28px; font-weight: bold; margin: 0;">---University Registration Form---</h2>
+				</div>
+
+				<div>
+					<label>Full Name</label>
+				</div>
+
+				<div style=" width:100%;">
+					<input style="width:100%;" type="text" name="fname" id="fullname" placeholder="Enter Your Full Name" required>
+				</div>
+
+
+				     <br>
+                
+
+				<div >
+					<label>Email</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="email" name="email" placeholder="Enter Your Valid Email" required>
+				</div>
+
+				      <br>
+
+
+				<div>
+			    <label>Phone</label>
+				</div>
+
+				<!-- Flex container to hold country code and phone input side-by-side -->
+				<div style="width: 100%; display: flex; gap: 10px;">
+				    <!-- Country Code Dropdown -->
+				    <select style="width: 30%; padding: 6px;" name="country_code" required>
+				        <option value="+880" selected>Bangladesh (+880)</option>
+				        <option value="+1">USA/Canada (+1)</option>
+				        <option value="+44">UK (+44)</option>
+				        <option value="+91">India (+91)</option>
+				        <option value="+92">Pakistan (+92)</option>
+				        <option value="+971">UAE (+971)</option>
+				        <option value="+61">Australia (+61)</option>
+				    </select>
+
+				    <!-- Phone Number Input -->
+				    <input style="width: 70%; padding: 6px;" type="tel" name="phone" placeholder="Enter Your Phone Number" required>
+				</div>
+
+
+
+				     <br>
+
+
+				<div >
+					<label>Your Age</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="number" name="age" placeholder="Enter Your Age" required>
+
+				</div>
+
+				    <br>
+
+				<div >
+					<label>Date of Birth</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="date" name="db" min="1980-01-01" max="2005-12-30" required>
+
+				</div>
+
+
+				     <br>
+
+
+				<div>
+					<label>Your Last Academic Degree</label>
+				</div>
+
+				<div style="width: 100%;">
+					<select style="width:100%; padding: 6px;" name="degree" required>
+						<option value="">-- Select Academic Degree --</option>
+						<option value="ssc">SSC</option>
+						<option value="hsc">HSC</option>
+						<option value="bachelor">Bachelor</option>
+						<option value="masters">Masters</option>
+					</select>
+				</div>
+
+				     
+				     <br>
+
+
+				<!-- New Field: Select Intake -->
+				<div>
+					<label>Select Intake</label>
+				</div>
+
+				<div style="width: 100%;">
+					<select style="width:100%; padding: 6px;" name="intake" required>
+						<option value="">-- Select Intake --</option>
+						<option value="spring">September 2026</option>
+						<option value="summer">January 2027</option>
+						<option value="fall">September 2027</option>
+					</select>
+				</div>
+
+				     <br>
+
+
+				<!-- New Field: Which Program Are You Interested In -->
+				<div>
+					<label>Which Program Are You Interested In?</label>
+				</div>
+
+				<div style="width: 100%;">
+					<select style="width:100%; padding: 6px;" name="program" required>
+						<option value="">-- Select Program --</option>
+						<option value="bachelor">Bachelor's Program</option>
+						<option value="master">Master's Program</option>
+						<option value="phd">Ph.D. Program</option>
+					</select>
+				</div>
+
+				     <br>
+
+
+				<!-- New Field: Write Your Selected University Name -->
+				<div>
+					<label>Enter the Name of Your Chosen University</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="text" name="university" placeholder="Chosen University Name" required>
+				</div>
+
+				     <br>
+
+
+				<!-- New Field: Gender -->
+				<div>
+					<label>Gender</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input type="radio" name="gender" value="male" required> <label style="font-size: 16px;">Male</label>
+					&nbsp;&nbsp;
+					<input type="radio" name="gender" value="female"> <label style="font-size: 16px;">Female</label>
+					&nbsp;&nbsp;
+					<input type="radio" name="gender" value="other"> <label style="font-size: 16px;">Other</label>
+				</div>
+
+				     <br>
+
+
+				<!-- Your Resume -->
+
+				<div >
+					<label>Upload Your Resume</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="file" name="cv" required>
+				</div>
+
+				      <br>
+
+
+				<div >
+					<label>Book Your Appoinment</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="time" name="appoinment" required>
+				</div>
+
+				      <br>
+
+				<!-- City (Select Your City) -->
+				<div>
+					<label>Select City</label>
+				</div>
+
+				<div style="width: 100%;">
+					<select style="width:100%; padding: 6px;" name="city" required>
+						<option value="dhaka" selected>Dhaka</option>
+						<option value="chattogram">Chattogram</option>
+						<option value="rajshahi">Rajshahi</option>
+						<option value="khulna">Khulna</option>
+						<option value="barishal">Barishal</option>
+						<option value="sylhet">Sylhet</option>
+						<option value="rangpur">Rangpur</option>
+						<option value="mymensingh">Mymensingh</option>
+					</select>
+				</div>
+				     <br>
+
+
+				<!-- New Field: Address -->
+				<div>
+					<label>Enter Your Full Address</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="text" name="address" placeholder="Enter Your Address" required>
+				</div>
+
+				     <br>
+
+
+				<!-- New Field: Write Your Messages Here -->
+				<div>
+					<label>Write Your Messages Here</label>
+				</div>
+
+				<div style="width: 100%;">
+					<textarea style="width:100%; height: 80px;" name="message" placeholder="Type your message here..." required></textarea>
+				</div>
+
+				     <br>
+
+
+				<div >
+					<label>Password</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="password" name="password" placeholder="e.g. Abc@1234" required>
+				</div>
+
+
+				     <br>
+
+
+				<div >
+					<label>Confirm Password</label>
+				</div>
+
+				<div style="width: 100%;">
+					<input style="width:100%;" type="password" name="cpassword" placeholder="e.g. Abc@1234" required>
+				</div>
+
+				<button>Submit</button>
+
+			</div>
+
+		</form>
+
+	</body>
+	</html>
